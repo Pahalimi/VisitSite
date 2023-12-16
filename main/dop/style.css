@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button:hover{
+    opacity: 80%;
+}
+.line{
+    border-bottom: 2px solid #000;
+    margin: 10px 500px 10px 0px;
+}
+
+
+
+
+.text {
+    margin: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+.cite{
+    text-decoration: none;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+
+#btn_1{
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 40px;
+}
+.kak h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#first{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.p2{
+    font-size: 20px;
+}
+
+
+
+.result h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.result p{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+
+#hide{
+    display: none;
+}
+
+#hide2{
+    display: none;
+}
+#hide3{
+    display: none;
+}

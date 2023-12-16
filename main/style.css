@@ -1,0 +1,540 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+button:hover{
+    opacity: 70%;
+}
+
+
+
+.dark_block{
+    display: flex;
+    background: #000;
+    color:#9c9c9c;
+}
+
+
+
+
+.text h1{
+    margin: 150px auto 20px auto;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+.text p{
+    margin-top: 0px auto 30px auto;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.first_pictures{
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+}
+.img1{
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+
+
+
+.text_1 span{
+    font-weight: 700;
+    color: #fff;
+}
+.text_1 b{
+    font-weight: 700;
+    color: #fff;
+}
+.block2{
+    display: inline-flex;  
+    flex-flow: row wrap;
+}
+.text_1 h1{
+    text-align: left;
+    font-size: 50px;
+    margin: 100px auto 40px auto;
+}
+.text_1 p{
+    text-align: left;
+    font-size: 20px;
+    text-wrap:unset;
+    word-spacing: 3px;
+    line-height: 25px;
+}
+.img3{
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 5%;
+}
+.btn button{
+    display: block;
+    background: blue;
+    border-radius: 5%;
+    padding: 5px;
+    color: #fff;
+    width: 250px;
+    height: 75px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-header h3{
+    font-size: 32px;
+    padding: 30px 20px 0 15px;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 5px 20px 0 30px;
+    overflow: auto;
+}
+.modal-body h6{
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.modal-body p{
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.modal_number{
+    width: 440px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.modal_number::placeholder{
+    padding: 15px;
+    font-size: 20px;
+}
+.modal_text{
+    width: 440px;
+    height: 100px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.modal_text::placeholder{
+    padding: 15px;
+    font-size: 20px;
+}
+#modal_btn{
+    width: 440px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.line{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #000;
+}
+.line_h1{
+    margin: 10px 200px 5px 200px;
+    border-bottom: 5px solid #000;
+}
+
+
+
+.interesting h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.interesting p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.fact_1{
+    display: inline-block;
+    margin-left: 175px;
+    margin-top: 40px;
+}
+.fact_2{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.fact_3{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.interesting{
+    margin-bottom: 100px;
+}
+
+
+
+.text_services h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin: 100px 300px 5px 300px;
+    color: #fff;
+}
+.text_services p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 300px 100px 340px;
+}
+.text_services b{
+    font-weight: 700;
+    color: #fff;
+}
+.line_2{
+    margin: 10px 500px 45px 500px;
+    border-bottom: 3px solid #fff;
+
+}
+
+
+
+
+.cards p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.cards img{
+    border-radius: 5%;
+}
+.cards button{
+    margin:30px auto 100px auto;
+    color: blue;
+    width: 150px;
+    height: 40px;
+    border: 3px solid blue;
+    background: #000;
+}
+.cards{
+    margin-bottom: 100px;
+}
+.card_1{
+    display: inline-block;
+    margin-left: 100px;
+}
+.card_2{
+    display: inline-block;
+    margin-left: 100px;
+}
+.card_3{
+    display: inline-block;
+    margin-left: 100px;
+}
+.img_2{
+    margin-bottom: 20px;
+}
+
+
+
+.cost h1{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+
+
+.head h1{
+    margin: 100px auto 40px;
+}
+.table {
+    text-align: center;
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.table th{
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+.btn_th{
+    margin-left: auto;
+}
+.table td{
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+.table button{
+    font-size: 20px;
+    color:#fff;
+    background: blue;
+    border-radius: 5%;
+    width: 140px;
+    height: 60px;
+    margin-right: 100px;
+}
+
+
+.h_rew{
+    background: #000;
+    color: #fff;
+}
+.h_rew h1{
+    margin: 100px auto 0px auto;
+    padding: 100px 0px 20px 0px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.line_3{
+    margin: 0px 550px 0px 550px;
+    background: #000;
+    border: 2px solid #fff;
+}
+.cards_rew{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.rew_cards {
+    display: flex;
+}
+.photo {
+    background: #d7d7d7;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.card_rew i{
+    opacity: 50%;
+}
+.card_rew h4{
+    margin-bottom: 10px;
+}
+.card_rew h6{
+    margin-bottom: 20px;
+}
+.card_rew{
+    margin: 0 50px 0 20px;
+    font-size: 18px;
+}
+.card_rew:first-child{
+    margin: 0 50px 0 0px;
+    font-size: 18px;
+}
+.card_rew p{
+    font-size: 18px;
+}
+
+
+
+
+.wrapper_1{
+    width: 65%;
+    margin: 0 auto;
+}
+.feedback{
+    text-align: center;
+}
+.feed_text h1{
+    margin: 100px auto 20px auto;
+    font-size: 50px;
+    font-weight: 500;
+}
+.feed_text p{
+    font-size: 25px;
+    color: #9c9c9c;
+    margin-bottom: 50px;
+}
+.Name_input{
+    width: 800px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 20px;
+}
+.Name_input::placeholder{
+    font-size: 20px;
+}
+.Number_input{
+    width: 800px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 20px;
+}
+.Number_input::placeholder{
+    font-size: 20px;
+}
+.Text_input{
+    width: 800px;
+    height: 150px;
+    font-size: 20px;
+    padding: 20px;
+    text-wrap: wrap;
+}
+.Text_input::placeholder{
+    font-size: 20px;
+}
+.feed_btn_ button{
+    display: block;
+    background: blue;
+    color: #fff;
+    margin: 30px auto 100px 250px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5%;
+}
+
+
+
+
+.contact h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 100px 300px 10px 550px;
+    text-align: center;
+    color: #fff;
+}
+.contact_ul{
+    margin-left: 300px;
+}
+.contact_ul a{
+    text-decoration: none;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    color: #fff ;
+}
+.contact{
+    margin-bottom: 100px;
+}
+.line_4{
+    margin: 0px 300px 40px 550px;
+    border-bottom: 2px solid #fff;
+}

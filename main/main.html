@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Репетитор по английскому" content="english, английский, язык, репетитор, course, курсы">
+    <link rel="stylesheet" href="style.css">
+    <title>Светлана</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="text">
+                <h1>Репититор Английского Языка</h1>
+                <div class="line_h1"></div>
+                <h1>Светлана Геннадьевна</h1>
+                <p><b>Опытный</b> репетитор по английскому языку для<br> подготовки к <b>ОГЭ</b>, <b>ЕГЭ</b> и <b>поступлению в ВУЗ</b></p>
+                <div class="first_pictures">
+                    <img src="img/1.webp" alt="first" width="350px" class="img1">
+                    <img src="img/2.webp" alt="second" width="350px" class="img2">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="dark_block">
+            <div class="wrapper">
+                <div class="block2">
+                    <div class="text_1">
+                        <h1><span>О себе</span></h1>
+                        <p>Здравствуйте! Я преподаватель с <b>огромным<br> опытом</b> преподавания английского языка для<br> детей и взрослых.
+                        Сумею заинтересовать и научу<br> любить английский язык! Много лет работаю<br> с русскоговорящими детьми разных возрастов.<br>
+                        Осуществляю качественную и эффективную<br> подготовку к ЕГЭ, что подтверждается<br> результатами моих учеников. <b>13 лет</b>
+                        отработала в<br> школах города Москвы с углубленным изучением<br> английского языка не только как учитель, но и как<br>
+                        эксперт ЕГЭ. Являюсь разработчиком собственных<br> курсов по английскому языку. Последние 2 года<br> активно
+                        преподаю по Skype и Zoom.</p>
+                    </div>
+                    <div class="picture">
+                        <img src="img/3.webp" alt="img3" height="500px" class="img3">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="btn_c" type="button" onclick="myFunc()">Записаться на занятие</button>
+
+
+
+                    <div id="openModal" class="modal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3 class="modal-title">Заказ услуги</h3>
+                              <a href="#close" title="Close" class="close">×</a>
+                            </div>
+                            <div class="modal-body">    
+                              <ul>
+                                  <li><h6>Услуга</h6></li>
+                                  <li><p>Подготовка к сдаче ЕГЭ и поступлению в ВУЗ</p></li>
+                                  <li><input class="modal_number" type="email" name="number_modal" placeholder="Телефон"></li>
+                                  <li><input class="modal_text" type="email" name="text_modal" placeholder="Ваше сообщение"></li>
+                              </ul>
+                              <button class="btn_modal" id="modal_btn">Записаться</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="interesting">
+            <div class="fact_1">
+                <h1>Более 15</h1>
+                <p>Лет практики и опыта работы<br> с учениками</p>
+            </div>
+            <div class="fact_2">
+                <h1>1400</h1>
+                <p>Учеников от 4 до 18 лет обучила<br> за все годы практики</p>
+            </div>
+            <div class="fact_3">
+                <h1>89%</h1>
+                <p>Из которых довольны результатом<br> и качеством полученных знаний</p>
+            </div>
+        </div>
+        <div class="dark_block">
+            <div class="services">
+                <div class="text_services">
+                    <h1>Услуги</h1>
+                    <div class="line_2"></div>
+                    <p>Вам нужен достойный результат? Я знаю, как его достичь! Все мои<br> ученики в 2022 году
+                    получили желаемые оценки в школе и поступили в<br> <b>престижные ВУЗы</b>.</p>
+                </div>
+                <div class="cards">
+                    <div class="card_1">
+                        <img src="img/83d09c6c4eb9081b9bdbf3aca84f807c.jpg" alt="study" width="300px">
+                        <p>Подготовка к сдаче ЕГЭ<br> и поступлению в ВУЗ</p>
+                        <button id="btn" type="button" onclick="myFunc()">Записаться</button>
+                    </div>
+                    <div class="card_2">
+                        <img src="img/1590493652-cd281977ce7873ce3eb41b1d961b3a39.jpg" alt="study_2" width="300px" class="img_2">
+                        <p>Работа со школьниками<br> начальных классов</p>
+                        <button id="btn" type="button" onclick="myFunc()">Записаться</button>
+                    </div>
+                    <div class="card_3">
+                        <img src="img/0-36.jpg" alt="study_3" width="300px">
+                        <p>Работа со школьниками 5-8<br> классов</p>
+                        <button id="btn" type="button" onclick="myFunc()">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cost">
+            <div class="head">
+                <h1>Цены на товары и услуги</h1>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Дополнительно</th>
+                            <th>Цена</th>
+                            <th class="btn_th"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Английский язык для<br> школьников 1-4 классов</td><td>Хорошее начало - полдела!<br> Уровень Beginner - A1.</td>
+                            <td>Занятия в паре/<br>индивидуально</td><td>600 руб./1200 руб. <br> 60 мин</td>
+                            <td><button class="btn_table" type="button" onclick="gipperFunc()">Подробнее</button></td>
+                        </tr>
+                        <tr>
+                            <td>Английский язык для<br> школьников 5-8 классов</td><td>Пора серьезно заняться<br> изучением языка!
+                            Уровень A1+-B1</td><td>Занятия в паре/<br>индивидуально</td><td>700 руб./ 1400 руб. <br> 60 мин</td>
+                            <td><button class="btn_table" type="button" onclick="gipperFunc()">Подробнее</button></td>
+                        </tr>
+                        <tr>
+                            <td>Английский язык для<br> школьников 9-11 классов</td><td>Время собирать камни! Самый<br> ответственный курс.<br> Уровень B1 - B2+</td>
+                            <td>Занятия в паре/<br>индивидуально</td><td>1250 руб./ 2500 руб. <br> 90 мин</td>
+                            <td><button class="btn_table" type="button" onclick="gipperFunc()">Подробнее</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="h_rew">
+                <h1>Отзывы</h1>
+                <div class="line_3"></div>
+            </div>
+            <div class="dark_block">
+                <div class="cards_rew">
+                    <div class="wrapper">
+                        <div class="rew_cards">
+                        <div class="card_rew">
+                            <div class="photo"></div>
+                            <h4>М</h4>
+                            <h6><i>Подготовка к сдаче ЕГЭ</i></h6>
+                            <p>Занимались с марта 2022 по июнь 2022. До этого ребенок занимался у репетитора, но пробник написал
+                            всего на 43 балла. Результатом очень довольны, получили 61 балл, даже выше, чем рассчитывали.
+                            Дочь решила пойти на лингвистику, и без Светланы Геннадьевны мы бы не обошлись.</p>
+                        </div>
+                        <div class="card_rew">
+                            <div class="photo"></div>
+                            <h4>Оксана</h4>
+                            <h6><i>Школьный курс</i></h6>
+                            <p>Занимаемся уже много лет у этого педагога. Сейчас ребенок переходит в 7й класс. Ребенок успешно сдал
+                            кембриджские экзамены, теперь у нас на полке красуются сертификаты. Результат превзошел все мои ожидания.
+                            В 1000 раз лучше, чем на курсах. И кстати дешевле.</p>
+                        </div>
+                        <div class="card_rew">
+                            <div class="photo"></div>
+                            <h4>Мама</h4>
+                            <h6><i>Подготовка к сдаче ЕГЭ</i></h6>
+                            <p>Хотим выразить огромную благодарность Светлане Геннадьевне за проделанную работу.
+                            Дочь сдала ЕГЭ на 99 баллов! Работой репетитора остались довольны, хоть и пришлось дочери попотеть за этот год. </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="wrapper_1">
+                <div class="feed_text">
+                    <h1>Записаться на пробное занятие</h1>
+                    <p>Первое занятие ознакомительное. На нем мы с познакомимся с Вами<br> и Вашим ребенком, определим уровень
+                    знаний на текущий момент<br> и составим план действий.</p>
+                </div>
+                <div class="feed_input">
+                    <input class="Name_input" type="email" name="name" placeholder="Имя">
+                    <input class="Number_input" type="email" name="number" placeholder="+7 123 45 67">
+                    <input class="Text_input" type="email" name="text" placeholder="Ваше сообщение">
+                </div>
+            </div>
+            <div class="feed_btn_">
+                <button class="feed_btn" id="feed_btn">Записаться</button>
+            </div>
+        </div>
+        <div class="dark_block">
+            <div class="contact">
+                <h1>Контакты</h1>
+                <div class="line_4"></div>
+                <div class="contact_ul">
+                    <a href="tel:+7(965)138-82-65"><span itemprop="telephone">+7(965)138-82-65</span></a>
+                    <a href="#">Москва, Щербинка</a>
+                    <a href="mailto:zlosvegas@gmail.com"><span itemprop="email">zlosvegas@gmail.com</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
