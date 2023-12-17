@@ -555,6 +555,15 @@ li{
     .img1{
         margin-left: 50px;
     }
+    .img3{
+        display: none;
+    }
+    .text_1{
+        margin-bottom: 50px;
+    }
+    .disapper{
+        display: none;
+    }
     .fact_1{
         margin-left: 60px;
     }
@@ -584,6 +593,36 @@ li{
         display: none;
     }
     .table{
-        margin-left: 30px;
+        margin-left: 0px;
+    }
+    .rew_cards{
+        display: flex;
+        flex-flow: column wrap;
+       padding-left: 50px;
+    }
+    .contact h1{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .a1{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 5 px;
+    }
+    .a2{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .a3{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 5px;
     }
 }
