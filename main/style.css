@@ -545,18 +545,7 @@ li{
 
 @media (max-width: 716px) {
     img {
-       width: 100px;
-       height: auto;
-       margin: 0;
-       padding: 0;
-       display: flex;
-       flex-flow: row nowrap;
-    }
-    .img1{
-        margin-left: 50px;
-    }
-    .img3{
-        display: none;
+       display: none;
     }
     .text_1{
         margin-bottom: 50px;
@@ -602,27 +591,40 @@ li{
     }
     .contact h1{
         text-align: left;
-        margin-left: 20px;
+        margin-left: 100px;
     }
-    .a1{
-        display: flex;
-        flex-flow: column wrap;
-        text-align: left;
-        margin-left: 0px;
-        margin-bottom: 5 px;
+    .contact_ul{
+        margin-left: 80px;
     }
-    .a2{
-        display: flex;
-        flex-flow: column wrap;
+    .contact_ul span{
+        margin: auto 1000px 20px auto;
         text-align: left;
-        margin-left: 0px;
-        margin-bottom: 5px;
     }
-    .a3{
-        display: flex;
-        flex-flow: column wrap;
-        text-align: left;
-        margin-left: 0px;
-        margin-bottom: 5px;
+    .line_3{
+        margin: 0px 150px 0px 150px;
+    }
+    .line_4{
+        margin: 0px 1000px 40px 80px;
+    }
+    .Name_input{
+        width: 400px;
+    }
+    .Number_input{
+        width: 400px;
+    }
+    .Text_input{
+        width: 400px;
+    }
+    .feed_btn_ button{
+        margin: 30px auto 100px 200px;;
+    }
+    .line_h1{
+        margin: 10px 100px 0px 100px;
+    }
+    .text h1{
+        margin: 100px auto 20px auto;
+    }
+    .text p br{
+        display: none;
     }
 }
