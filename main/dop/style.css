@@ -78,3 +78,13 @@ button:hover{
 #hide3{
     display: none;
 }
+
+
+@media (max-width: 716px) {
+    blockquote{
+        margin-bottom: 20px;
+    }
+    .line{
+        margin: 10px 0px 10px 0px;
+    }
+}
